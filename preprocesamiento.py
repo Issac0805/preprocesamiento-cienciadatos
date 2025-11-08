@@ -1,7 +1,7 @@
 # archivo principal de preprocesamiento
 # preprocesamiento.py
-# Autor: Yoryhi Isaac Cadena Acosta
-# Descripción: Funciones básicas de preprocesamiento de datos usando pandas
+# nombres: Yoryhi Isaac Cadena Acosta
+# descripción: Funciones básicas de preprocesamiento de datos usando pandas
 
 
 import pandas as pd
