@@ -69,7 +69,20 @@ preprocesamiento-cienciadatos/
 6. Commit con función limpiar_datos() ![Evidencia 5](docs/evidencias/5_commit_limpieza_datos.png)
 7. Commit con función normalizar_datos() ![Evidencia 6](docs/evidencias/6_commit_normalizacion.png)
 8. Commit con función exportar_datos() ![Evidencia 7](docs/evidencias/7_commit_exportar_datos.png)
-9. Fusión y push final hacia main | ![Evidencia 8](docs/evidencias/8_merge_y_push_main.png)
+9. Fusión y push final hacia main ![Evidencia 8](docs/evidencias/8_merge_y_push_main.png)
+10. Configuración del workflow de GitHub Actions ![Evidencia 9](docs/evidencias/11_workflow_github_actions.png)
+on: indica cuándo se ejecuta es decir cada que se hace push a main y jobs: define lo que hará el flujo, clona el repositorio, instala Python y pandas, luego verifica que el script preprocesamiento.py se ejecute sin errores de sintaxis.
+
+11. Vista del repositorio en GitHub con todos los archivos subidos ![Evidencia 10](docs/evidencias/9_repositorio_github.png)
+12. Visualización del código en GitHub ![Evidencia 11](docs/evidencias/10_codigo_en_github.png)
+13. Pull Request y fusión en GitHub
+Se realizó la simulación de una Pull Request desde la rama `feature/preprocesamiento` hacia la rama `main`, gitHub indicó que ambas ramas estaban sincronizadas a la fusión previa realizada desde la terminal con Git, esto afirma que los cambios fueron correctamente integrados en la rama principal.
+![Evidencia 12](docs/evidencias/12_pull_request_simulada.png)
+14. GitHub Actions, y ejecución del Workflow
+Se configuró un flujo de trabajo automático en `.github/workflows/python-check.yml`, el flujo se ejecuta cada vez que se realiza un push o un pull request en la rama `main`, durante la primera ejecución hubo un error de configuración que se corrigió, validando el script `preprocesamiento.py` y asi mostrando la automatización CI/CD.
+![Evidencia 16](docs/evidencias/16_github_actions_error.png)  
+![Evidencia 17](docs/evidencias/17_github_actions_exitosa.png)
+15. Eliminación de la rama feature/preprocesamiento tras la fusión | ![Evidencia 19](docs/evidencias/19_eliminar_rama_feature.png) |
 
 ---
 ## 6️. Enlace al repositorio en GitHub
@@ -77,9 +90,4 @@ preprocesamiento-cienciadatos/
 
 ---
 ## 7️. Conclusión
-Este royecto arefor el uso de **Git y GitHub** como herramientas de colaboración y control de versiones, así como aplicar **técnicas básicas de preprocesamiento de datos**.  
-Durante el desarrollo se realizó un flujo completo: creación de ramas, commits, merge y documentación de evidencias.
-
-
-Este proyecto ayudó a practicar cómo trabajar en equipo y guardar los cambios del código de forma ordenada usando Git y GitHub. También sirvió para aplicar pasos básicos para preparar los datos antes de analizarlos.
-Durante el trabajo se siguió todo el proceso: se crearon líneas de trabajo (ramas), se guardaron cambios con notas (commits), se unieron los avances (merge), y se dejó constancia de todo lo hecho con documentación.
+Este proyecto ayudó a practicar el uso de Git y GitHub y guardar los cambios del código de forma ordenada, también sirvió para aplicar pasos básicos para preparar los datos antes de analizarlos, también se siguió el proceso donde: se crearon líneas de trabajo (ramas), se guardaron cambios con notas (commits), se unieron los avances (merge), y se documento todo lo hecho con documentación.
