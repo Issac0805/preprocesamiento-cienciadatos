@@ -39,3 +39,13 @@ def normalizar_datos(df, columnas):
             df_norm[col] = (df_norm[col] - df_norm[col].min()) / (df_norm[col].max() - df_norm[col].min())
     print("Columnas normalizadas:", columnas)
     return df_norm
+
+def exportar_datos(df, ruta_salida):
+    "Exporta el DataFrame procesado a un archivo CSV"
+    "Parámetros: df (DataFrame): dataset a exportar, ruta_salida (str): ruta y nombre del archivo de salida"
+    try:
+        df.to_csv(ruta_salida, index=False)
+        print(f"Datos exportados correctamente en: {ruta_salida}")
+    except Exception as e:
+        print(f"Error al exportar los datos: {e}")
+
