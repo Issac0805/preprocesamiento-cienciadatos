@@ -1,4 +1,6 @@
 Optimización de Código y Medición de Tiempos — Actividad Autónoma
+
+---
 ## 1. Introducción
 
 En esta actividad se trabajó con un programa en Python que busca números primos desde el 1 a 100.000.
@@ -6,6 +8,7 @@ Primero se analizó el código original, que era poco eficiente porque revisaba 
 
 El objetivo principal fue comparar el antes y después de optimizar el código y entender cómo cambios simples pueden mejorar mucho la velocidad de un programa.
 
+---
 ## 2. Código original y problemas detectados
 
 El código original verificaba si un número era primo probando todos los divisores desde 2 hasta el mismo número, lo cual genera muchísimas operaciones innecesarias, esto hace que el programa tarde más tiempo cuando trabaja con rangos grandes.
@@ -24,6 +27,7 @@ Los principales problemas identificados fueron:
 
 - Falta de uso de librerías más eficientes como NumPy.
 
+---
 ## 3. Código optimizado
 
 Para mejorar el rendimiento del código se aplicaron estas técnicas:
@@ -46,6 +50,7 @@ Después de optimizar el programa, el tiempo de ejecución bajó aproximadamente
 
 Esto representa una mejora enorme frente al código original.
 
+---
 ## 4. Resultados
 
 Para comparar ambas versiones se midieron los tiempos con:
@@ -70,31 +75,34 @@ En el código optimizado, NumPy realiza las divisiones en un solo bloque, reduci
 
 Esto confirma que el problema del código original era la cantidad de operaciones internas, y que NumPy resolvió eso con operaciones vectorizadas.
 
-## 6. Gráficos generados
+---
+## 5. Gráficos generados
 
 Se generaron dos gráficos usando Matplotlib:
 
-- Comparación del tiempo de ejecución entre el código original y el optimizado. 
+- Comparación del tiempo de ejecución entre el código original y el optimizado
 
-![Gráfico de comparación de tiempos](optimizacion_codigo/comparacion_tiempos.png)
+![Gráfico de comparación de tiempos](comparacion_tiempos.png)
 
 
 - Distribución de los tiempos, mostrando visualmente la diferencia entre ambas versiones.
 
-![Distribución de tiempos](optimizacion_codigo/distribucion_tiempos.png)
+![Distribución de tiempos](distribucion_tiempos.png)
 
 
 Estos gráficos permiten apreciar claramente el impacto de las mejoras aplicadas.
 
-## 7. Conclusiones
+---
+## 6. Conclusiones y Recomendaciones
 
-Optimizar un código puede reducir los tiempos de ejecución de manera significativa.
+### Conclusiones:
 
-Técnicas simples como limitar el rango del bucle y usar list comprehensions generan mejoras importantes.
+Optimizar un código puede reducir los tiempos de ejecución de manera significativa, técnicas simples como limitar el rango del bucle y usar list comprehensions generan mejoras importantes, el uso de librerías especializadas como NumPy aporta un mejor rendimiento gracias a la vectorización, el análisis con cProfile ayuda a identificar qué partes del programa consumen más tiempo y la optimización final redujo el tiempo de ejecución de 24 segundos a menos de 1 segundo, logrando una mejora notable en eficiencia.
 
-El uso de librerías especializadas como NumPy aporta un rendimiento mucho mayor gracias a la vectorización.
+### Recomendaciones:
 
-El análisis con cProfile ayuda a identificar qué partes del programa consumen más tiempo.
+Usar funciones y herramientas que hagan el trabajo más rápido, como NumPy, cuando sea posible, revisar primero qué parte del código está tardando más antes de intentar mejorar todo, mantener el código ordenado en carpetas para que sea fácil de entender y modificar, evitar ciclos innecesarios y buscar métodos vectorizados o funciones más eficientes para reducir tiempo de ejecución y comparar siempre los tiempos antes y después de optimizar para confirmar que realmente mejoró.
 
-La optimización final redujo el tiempo de ejecución de 24 segundos a menos de 1 segundo, logrando una mejora notable en eficiencia.
+---
+### 7. Anexos
 
