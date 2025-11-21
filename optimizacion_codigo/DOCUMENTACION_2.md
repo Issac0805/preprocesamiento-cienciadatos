@@ -1,4 +1,13 @@
-Optimización de Código y Medición de Tiempos — Actividad Autónoma
+### CULTURA DIGITAL Y SOCIEDAD
+### Actividad Autónoma 4
+#### Unidad 2: Herramientas y Metodologías en Ciencia de Datos
+#### Tema 2: Buenas Prácticas en Programación para Ciencia de Datos
+
+- Nombres: Yoryhi Isaac Cadena Acosta
+- Fecha: 21/11/2025
+- Carrera: Ciencia de Datos e Inteligencia Artificial
+- Periodo académico: 2025 - 2S
+- Semestre: Tercero
 
 ---
 ## 1. Introducción
@@ -13,9 +22,7 @@ El objetivo principal fue comparar el antes y después de optimizar el código y
 
 El código original verificaba si un número era primo probando todos los divisores desde 2 hasta el mismo número, lo cual genera muchísimas operaciones innecesarias, esto hace que el programa tarde más tiempo cuando trabaja con rangos grandes.
 
-El tiempo promedio del código original fue aproximadamente:
-
-24.60 segundos
+El tiempo promedio del código original fue aproximadamente: 24.60 segundos
 
 Los principales problemas identificados fueron:
 
@@ -32,15 +39,15 @@ Los principales problemas identificados fueron:
 
 Para mejorar el rendimiento del código se aplicaron estas técnicas:
 
-a) Iterar solo hasta la raíz cuadrada del número
+#### a) Iterar solo hasta la raíz cuadrada del número
 
 No es necesario revisar todos los divisores, solo hasta la raíz de n (√n), porque si un número tuviera un divisor mayor, el otro sería menor y ya habría sido detectado.
 
-b) Uso de list comprehensions
+#### b) Uso de list comprehensions
 
 Esto permite crear listas de forma más rápida y sólida que con bucles normales.
 
-c) Uso de NumPy
+#### c) Uso de NumPy
 
 NumPy permite aplicar operaciones de manera vectorizada, lo que reduce el tiempo de cálculo comparado con un bucle de Python.
 
@@ -104,5 +111,22 @@ Optimizar un código puede reducir los tiempos de ejecución de manera significa
 Usar funciones y herramientas que hagan el trabajo más rápido, como NumPy, cuando sea posible, revisar primero qué parte del código está tardando más antes de intentar mejorar todo, mantener el código ordenado en carpetas para que sea fácil de entender y modificar, evitar ciclos innecesarios y buscar métodos vectorizados o funciones más eficientes para reducir tiempo de ejecución y comparar siempre los tiempos antes y después de optimizar para confirmar que realmente mejoró.
 
 ---
-### 7. Anexos
+## 7. Anexos
 
+![](../docs/evidencias/anexos_2/1.png)
+
+![](../docs/evidencias/anexos_2/2.png)
+
+![](../docs/evidencias/anexos_2/3.png)
+
+![](../docs/evidencias/anexos_2/4.png)
+
+![](../docs/evidencias/anexos_2/5.png)
+
+![](../docs/evidencias/anexos_2/6.png)
+
+![](../docs/evidencias/anexos_2/7.png)
+
+![](../docs/evidencias/anexos_2/8.png)
+
+![](../docs/evidencias/anexos_2/9.png)
