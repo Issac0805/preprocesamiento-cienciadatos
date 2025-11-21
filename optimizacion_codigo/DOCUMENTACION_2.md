@@ -130,3 +130,7 @@ Usar funciones y herramientas que hagan el trabajo más rápido, como NumPy, cua
 ![](../docs/evidencias/anexos_2/8.png)
 
 ![](../docs/evidencias/anexos_2/9.png)
+
+## 8. Enlace del repositorio
+
+[https://github.com/Issac0805/preprocesamiento-cienciadatos](https://github.com/Issac0805/preprocesamiento-cienciadatos)
